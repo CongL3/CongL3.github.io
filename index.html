@@ -1,208 +1,61 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Cong Le</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cong Le - Principal iOS Developer</title>
+    <meta name="description" content="Portfolio of Cong Le, Principal iOS Developer at Capital One. Creator of Anniversary Tracker." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              ios: {
+                blue: '#007AFF',
+                gray: '#8E8E93',
+                lightGray: '#F2F2F7',
+                dark: '#1C1C1E',
+                card: '#FFFFFF',
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #F5F5F7; /* Apple-like light gray background */
+        color: #1D1D1F;
+        -webkit-font-smoothing: antialiased;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      .dark body {
+        background-color: #000000;
+        color: #F5F5F7;
+      }
+    </style>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">@CongLe</a>
-					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">About me</a></li>
-							<li><a href="json-viewer.html">JSON Parser</a></li>
-							<!-- <li class="active"><a href="index.html">Apps</a></li>
-							<li class="active"><a href="index.html">This is Massively</a></li> -->
-						</ul>
-						<ul class="icons">
-							<li><a href="https://twitter.com/congle" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://www.linkedin.com/in/cong-le-ios/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
-							<li><a href="https://github.com/CongL3" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Featured Post -->
-								<header class="major">
-										<h2> About me</h2>
-										<p>A relaxed and diligent individual. With a mantra of gravitating towards the positive. An iOS Engineer turned into backpacker then into an English teacher.
-										Now looking to re-enter the real world and ready to jump head first back into iOSland.
-										</p>
-										<p class="post">
-										<a href="files/CV.pdf" class="button icon solid fa-download">Download CV</a>
-											</p>
-								</header>
-
-						<!-- Posts -->
-						<header class="major">
-							<h2>Personal Projects</a></h2>
-							<p> Here's a list of some of my small apps I've made.
-								</p>
-							</header>
-
-							<section class="posts">
-								<article>
-									<header>
-
-										<h2>
-											<div>
-												<img src="images/anniversaryicon.png" style="vertical-align: middle; height:60px;width:auto;border-radius:30%;border: 1px solid rgb(209, 202, 202)"/>
-												<span style="vertical-align: middle;">Anniversary tracker<a href="https://apps.apple.com/us/app/anniversary-tracker-no-ads/id1570714816" style="color: lightskyblue;"> (App store) </a></span>
-											</div>
-										</h2>
-									</header>
-									<a class="image fit"><img src="images/anniversarytracker.png" alt="" /></a>
-									<p>Over 65k Downloads, 800k sessions, 1k Ratings at 4.7 Stars.</p>
-									<p>Track the number of days you've been in a relationship. Set your date and it'll tell you the how many days it has been.</p>
-									<ul class="tags">
-										<li>SwiftUI</li>
-										<li>Core Data</li>
-										<li>MVVM</li>
-										<li>Swift</li>
-									</ul>
-
-								</article>
-								<article>
-									<header>
-										<h2>
-											<div>
-												<img src="images/waterthemplantsicon.png" style="vertical-align: middle; height:60px;width:auto;border-radius:30%;  border: 1px solid rgb(209, 202, 202);"/>
-												<span style="vertical-align: middle;">Water them plants<a href="https://apps.apple.com/us/app/water-them-plants/id1573313539" style="color: lightskyblue;"> (App store) </a></span>
-											</div>
-										</h2>
-									</header>
-									<a class="image fit"><img src="images/waterthemplants.png" alt="" /></a>
-									<p>1k Downloads</p>
-									<p>A plant watering reminder app. lets you add photos using your camera or from photo library.
-										 Set custom times and recurring dates so you don't forget to water your lovely plants.</p>
-										 <ul class="tags">
-											<li>Swift</li>
-											<li>Local notifications</li>
-											<li>Collections Views</li>
-											<li>Core Data</li>
-											<li>MVVM</li>
-										</ul>
-								</article>
-								<article>
-									<header>
-									<h2>
-										<div>
-											<img src="images/FishRunIcon.png" style="vertical-align: middle; height:60px;width:auto;border-radius:30%;"/>
-											<span style="vertical-align: middle;">Fish Run<a href="https://apps.apple.com/us/app/fish-run-collect-stars/id1580103922" style="color: lightskyblue;"> (App store) </a></span>
-										</div>
-									</h2>
-									</header>
-									<a class="image fit"><img src="images/fishrun.png" alt="" /></a>
-									<p>My first stab a 2D Unity game. A simple infinity runner with inspiration from the one hit wonder flappy bird.</p>
-									<ul class="tags">
-										<li>Unity</li>
-										<li>C#</li>
-										<li>Aseprite</li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2>
-											<div>
-												<img src="images/RunRunRunIcon.png" style="vertical-align: middle; height:60px;width:auto;border-radius:30%;"/>
-												<span style="vertical-align: middle;">Run Run Run<a href="https://apps.apple.com/us/app/run-run-run/id1582701318" style="color: lightskyblue;"> (App store) </a></span>
-											</div>
-										</h2>
-									</header>
-									<a class="image fit"><img src="images/runrunrun.png" alt="" /></a>
-									<p>Canabalt style infinity runner and my 2nd stab at unity</p>
-									<ul class="tags">
-										<li>Unity</li>
-										<li>C#</li>
-										<li>Aseprite</li>
-									</ul>
-
-								</article>
-
-
-								
-							</section>
-							
-						 <header class="major">
-							<h2>Mock apps</a></h2>
-							<p>Here's some mock projects, it's a mix of playing and tutorials. Some examples below. The images link to Source code.
-							<br>More detail can be found here
-								<a href="https://github.com/CongL3/Project-overview" style="color: lightskyblue;"> (Github) </a>
-							</p>
-							
-						</header>
-
-
-						<section class="posts">
-							<article>
-								<a href="https://github.com/CongL3/IMDBViewer" class="image left"><img src="images/IMDBApp.gif" alt="" /></a>
-							<a href="https://github.com/CongL3/InstagramClone" class="image right"><img src="images/instagram1.gif" alt="" /></a>
-	</article>
-
-							<article>
-								<a href="https://github.com/CongL3/Project-overview/tree/main/NationalGeo" class="image left"><img src="images/NatGeo.png" alt="" /></a>
-								<a href="https://github.com/CongL3/News" class="image right"><img src="images/news.gif" alt="" /></a>
-
-							</article>
-							
-						</section>
-
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<!-- <section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
-							</section>
-						</section> -->
-						<section class="split contact">
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://twitter.com/congle" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="https://www.linkedin.com/in/cong-le-ios/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
-									<li><a href="https://github.com/CongL3" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; TEAMCONG</li>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <script type="importmap">
+    {
+      "imports": {
+        "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "react": "https://aistudiocdn.com/react@^19.2.0"
+      }
+    }
+    </script>
+    <script type="module" crossorigin src="/assets/index-CRFF6Ptn.js"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-900 dark:bg-black dark:text-white transition-colors duration-300">
+    <div id="root"></div>
+  </body>
 </html>
