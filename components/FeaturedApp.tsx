@@ -7,7 +7,19 @@ const PhoneMockup: React.FC<{ src?: string; alt: string; className?: string }> =
     {/* Dynamic Island / Notch */}
     <div className="absolute top-0 left-1/2 transform -translate-x-1/2 h-6 w-1/3 bg-black rounded-b-2xl z-20"></div>
     {src ? (
-      <img src={src} alt={alt} className="w-full h-full object-cover" />
+      <img
+        src={src}
+        alt={alt}
+        className="w-full h-full object-cover"
+        loading="lazy"
+        onError={(e) => {
+          const img = e.currentTarget;
+          if (!img.dataset.fallbackApplied) {
+            img.dataset.fallbackApplied = 'true';
+            img.src = '/images/screenshot-placeholder.svg';
+          }
+        }}
+      />
     ) : (
       <div className="w-full h-full bg-gray-800 flex items-center justify-center text-gray-600">
         <span className="text-xs">Screenshot</span>

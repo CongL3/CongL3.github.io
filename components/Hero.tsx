@@ -13,6 +13,13 @@ const Hero: React.FC = () => {
             src={HERO_CONTENT.profileImage} 
             alt={HERO_CONTENT.name} 
             className="relative w-32 h-32 rounded-full border-4 border-white dark:border-gray-800 shadow-2xl object-cover"
+            onError={(e) => {
+              const img = e.currentTarget;
+              if (!img.dataset.fallbackApplied) {
+                img.dataset.fallbackApplied = 'true';
+                img.src = '/images/profile-placeholder.svg';
+              }
+            }}
           />
         </div>
 

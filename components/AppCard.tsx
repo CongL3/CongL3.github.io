@@ -7,7 +7,19 @@ const AppCard: React.FC<{ app: AppData }> = ({ app }) => (
     <div className="flex items-start justify-between mb-4">
       <div className="w-16 h-16 rounded-2xl overflow-hidden shadow-md bg-gray-100 dark:bg-gray-700">
         {app.iconUrl ? (
-           <img src={app.iconUrl} alt={app.name} className="w-full h-full object-cover" />
+           <img
+             src={app.iconUrl}
+             alt={app.name}
+             className="w-full h-full object-cover"
+             loading="lazy"
+             onError={(e) => {
+               const img = e.currentTarget;
+               if (!img.dataset.fallbackApplied) {
+                 img.dataset.fallbackApplied = 'true';
+                 img.src = '/images/app-placeholder.svg';
+               }
+             }}
+           />
         ) : (
            <div className={`w-full h-full ${app.iconColor} flex items-center justify-center text-white`}>
              <Smartphone className="w-8 h-8" />
