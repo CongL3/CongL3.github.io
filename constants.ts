@@ -71,10 +71,10 @@ export const APPS: AppData[] = [
     downloads: "250k+",
     rating: 4.7,
     iconColor: "bg-rose-500",
-    iconUrl: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=200&h=200&q=80",
+    iconUrl: "/images/apps/1570714816/icon.jpg",
     isFeatured: true,
     url: "https://apps.apple.com/gb/developer/cong-le/id954373766",
-    screenshots: ["https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=600&auto=format&fit=crop"]
+    screenshots: ["/images/apps/1570714816/screenshot-1.jpg"]
   },
   {
     id: "cardvalue",
@@ -82,9 +82,8 @@ export const APPS: AppData[] = [
     category: AppCategory.ENTERTAINMENT,
     description: "Track Pokémon card prices and monitor collection value in one place.",
     iconColor: "bg-yellow-500",
-    iconUrl: "https://images.unsplash.com/photo-1613771404784-3a5686aa2be3?auto=format&fit=crop&w=200&h=200&q=80",
+    iconUrl: "/images/apps/6743774763/icon.jpg",
     url: "https://apps.apple.com/gb/developer/cong-le/id954373766",
-    screenshots: ["https://images.unsplash.com/photo-1601985705806-0b6673209299?q=80&w=600&auto=format&fit=crop"]
   },
   {
     id: "kids-timer",
@@ -92,7 +91,7 @@ export const APPS: AppData[] = [
     category: AppCategory.PRODUCTIVITY,
     description: "Visual routine timers designed to help kids stay focused and independent.",
     iconColor: "bg-blue-500",
-    iconUrl: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=200&h=200&q=80",
+    iconUrl: "/images/apps/6747147301/icon.jpg",
     url: "https://apps.apple.com/gb/developer/cong-le/id954373766"
   },
   {
@@ -101,9 +100,8 @@ export const APPS: AppData[] = [
     category: AppCategory.WEATHER,
     description: "Accurate daylight and golden-hour timing for creators and outdoor plans.",
     iconColor: "bg-amber-500",
-    iconUrl: "https://images.unsplash.com/photo-1495539406979-bf61750d38ad?auto=format&fit=crop&w=200&h=200&q=80",
+    iconUrl: "/images/apps/6740433779/icon.jpg",
     url: "https://apps.apple.com/gb/developer/cong-le/id954373766",
-    screenshots: ["https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=600&auto=format&fit=crop"]
   },
   {
     id: "vidcompress",
@@ -111,7 +109,7 @@ export const APPS: AppData[] = [
     category: AppCategory.PHOTO_VIDEO,
     description: "Compress large videos quickly while keeping quality good enough to share.",
     iconColor: "bg-indigo-500",
-    iconUrl: "https://images.unsplash.com/photo-1535016120720-40c6874c3b1c?auto=format&fit=crop&w=200&h=200&q=80",
+    iconUrl: "/images/apps/6740351118/icon.jpg",
     url: "https://apps.apple.com/gb/developer/cong-le/id954373766"
   },
   {
@@ -120,7 +118,7 @@ export const APPS: AppData[] = [
     category: AppCategory.PHOTO_VIDEO,
     description: "Reduce image size to save storage and speed up sharing.",
     iconColor: "bg-purple-500",
-    iconUrl: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=200&h=200&q=80",
+    iconUrl: "/images/apps/6740165217/icon.jpg",
     url: "https://apps.apple.com/gb/developer/cong-le/id954373766"
   },
   {
@@ -129,7 +127,7 @@ export const APPS: AppData[] = [
     category: AppCategory.PRODUCTIVITY,
     description: "Smart birthday reminders with countdowns so important dates never slip.",
     iconColor: "bg-pink-500",
-    iconUrl: "https://images.unsplash.com/photo-1557844191-40736d139d25?auto=format&fit=crop&w=200&h=200&q=80",
+    iconUrl: "/images/apps/6739454115/icon.jpg",
     url: "https://apps.apple.com/gb/developer/cong-le/id954373766"
   },
   {
@@ -138,9 +136,8 @@ export const APPS: AppData[] = [
     category: AppCategory.UTILITIES,
     description: "Lightweight link manager to quickly save and organize useful URLs.",
     iconColor: "bg-emerald-500",
-    iconUrl: "https://images.unsplash.com/photo-1481487484168-9b930d55208d?auto=format&fit=crop&w=200&h=200&q=80",
+    iconUrl: "/images/apps/6743759106/icon.jpg",
     url: "https://apps.apple.com/gb/developer/cong-le/id954373766",
-    screenshots: ["https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600&auto=format&fit=crop"]
   },
   {
     id: "lullaby",
@@ -148,7 +145,7 @@ export const APPS: AppData[] = [
     category: AppCategory.LIFESTYLE,
     description: "Calming white noise and ambient sounds for sleep and focus.",
     iconColor: "bg-sky-500",
-    iconUrl: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=200&h=200&q=80",
+    iconUrl: "/images/apps/6739187522/icon.jpg",
     url: "https://apps.apple.com/gb/developer/cong-le/id954373766"
   },
   {
@@ -157,7 +154,7 @@ export const APPS: AppData[] = [
     category: AppCategory.EDUCATION,
     description: "Build Japanese vocabulary and daily language habits with bite-sized practice.",
     iconColor: "bg-red-400",
-    iconUrl: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=200&h=200&q=80",
+    iconUrl: "/images/apps/1637507803/icon.jpg",
     url: "https://apps.apple.com/gb/developer/cong-le/id954373766"
   },
   {
@@ -166,7 +163,7 @@ export const APPS: AppData[] = [
     category: AppCategory.LIFESTYLE,
     description: "Identify fish species with AI and keep useful details close while outdoors.",
     iconColor: "bg-cyan-600",
-    iconUrl: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=200&h=200&q=80",
+    iconUrl: "/images/apps/6746223793/icon.jpg",
     url: "https://apps.apple.com/gb/developer/cong-le/id954373766"
   },
   {
@@ -175,7 +172,89 @@ export const APPS: AppData[] = [
     category: AppCategory.PRODUCTIVITY,
     description: "Simple focus sessions and breaks based on the Pomodoro method.",
     iconColor: "bg-orange-500",
-    iconUrl: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=200&h=200&q=80",
+    iconUrl: "/images/apps/6744445553/icon.jpg",
     url: "https://apps.apple.com/gb/developer/cong-le/id954373766"
+  }
+
+  ,{
+    id: "to-do-list",
+    name: "To Do List - One focus",
+    category: AppCategory.PRODUCTIVITY,
+    description: "Minimal task manager focused on one thing at a time.",
+    iconColor: "bg-slate-500",
+    iconUrl: "/images/apps/1633843163/icon.jpg",
+    url: "https://apps.apple.com/gb/app/id1633843163"
+  },
+  {
+    id: "couple-days",
+    name: "Couple days counter",
+    category: AppCategory.LIFESTYLE,
+    description: "Track relationship milestones and day counts.",
+    iconColor: "bg-rose-400",
+    iconUrl: "/images/apps/1634973558/icon.jpg",
+    url: "https://apps.apple.com/gb/app/id1634973558"
+  },
+  {
+    id: "water-plants",
+    name: "Water them plants",
+    category: AppCategory.LIFESTYLE,
+    description: "Plant care reminders and watering schedules.",
+    iconColor: "bg-green-500",
+    iconUrl: "/images/apps/1573313539/icon.jpg",
+    url: "https://apps.apple.com/gb/app/id1573313539"
+  },
+  {
+    id: "run-run-run",
+    name: "Run Run Run",
+    category: AppCategory.ENTERTAINMENT,
+    description: "Arcade runner game with fast-paced gameplay.",
+    iconColor: "bg-orange-500",
+    iconUrl: "/images/apps/1582701318/icon.jpg",
+    url: "https://apps.apple.com/gb/app/id1582701318"
+  },
+  {
+    id: "fish-run",
+    name: "Fish Run - Collect stars",
+    category: AppCategory.ENTERTAINMENT,
+    description: "Casual game: collect stars and avoid obstacles.",
+    iconColor: "bg-cyan-500",
+    iconUrl: "/images/apps/1580103922/icon.jpg",
+    url: "https://apps.apple.com/gb/app/id1580103922"
+  },
+  {
+    id: "baby-kicks",
+    name: "Baby Kicks: Track Movements",
+    category: AppCategory.LIFESTYLE,
+    description: "Track baby kick sessions with simple logs and timing.",
+    iconColor: "bg-pink-400",
+    iconUrl: "/images/apps/6563145060/icon.jpg",
+    url: "https://apps.apple.com/gb/app/id6563145060"
+  },
+  {
+    id: "simple-timer",
+    name: "Simple Timer & Stopwatch Clock",
+    category: AppCategory.PRODUCTIVITY,
+    description: "Simple timer and stopwatch utility.",
+    iconColor: "bg-blue-400",
+    iconUrl: "/images/apps/6737737475/icon.jpg",
+    url: "https://apps.apple.com/gb/app/id6737737475"
+  },
+  {
+    id: "othello",
+    name: "Othello - TEAMCONG",
+    category: AppCategory.ENTERTAINMENT,
+    description: "Classic strategy board game implementation.",
+    iconColor: "bg-neutral-600",
+    iconUrl: "/images/apps/1590705319/icon.jpg",
+    url: "https://apps.apple.com/gb/app/id1590705319"
+  },
+  {
+    id: "solitaire",
+    name: "Solitaire - TEAMCONG",
+    category: AppCategory.ENTERTAINMENT,
+    description: "Classic solitaire card game for quick sessions.",
+    iconColor: "bg-emerald-600",
+    iconUrl: "/images/apps/1582328906/icon.jpg",
+    url: "https://apps.apple.com/gb/app/id1582328906"
   }
 ];
