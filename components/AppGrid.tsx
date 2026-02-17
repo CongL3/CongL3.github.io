@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { AppCategory, AppData } from '../types';
+import { AppCategory } from '../types';
 import { APPS } from '../constants';
-import { Smartphone, ExternalLink } from 'lucide-react';
 import AppCard from './AppCard';
 
 const AppGrid: React.FC = () => {
@@ -17,7 +16,15 @@ const AppGrid: React.FC = () => {
   return (
     <section id="apps" className="py-24 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl mb-3">
+            App Portfolio
+          </h2>
+          <p className="text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
+            A focused collection of consumer iOS apps across utility, productivity, and lifestyle categories.
+          </p>
+        </div>
+
         {/* Category Filter */}
         <div className="flex flex-wrap justify-center gap-2 mb-12">
           {categories.map((category) => (
