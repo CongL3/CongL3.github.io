@@ -46,11 +46,11 @@ const Footer: React.FC = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-6 text-gray-100">Legal & Support</h4>
+            <h4 className="text-lg font-semibold mb-6 text-gray-100">Explore</h4>
             <ul className="space-y-3">
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Terms & Conditions</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">App Support</a></li>
+                <li><a href={HERO_CONTENT.appStoreLink} target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">App Store Portfolio</a></li>
+                <li><a href={HERO_CONTENT.githubLink} target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">GitHub Projects</a></li>
+                <li><a href={HERO_CONTENT.linkedinLink} target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">LinkedIn Profile</a></li>
             </ul>
           </div>
         </div>

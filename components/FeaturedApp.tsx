@@ -20,7 +20,7 @@ const PhoneMockup: React.FC<{ src?: string; alt: string; className?: string }> =
 
 const FeaturedApp: React.FC = () => {
   const anniversaryApp = APPS.find(app => app.id === 'anniversary');
-  const linkSaverApp = APPS.find(app => app.id === 'linksaver');
+  const linkSaverApp = APPS.find(app => app.id === 'link-saver');
   const cardValueApp = APPS.find(app => app.id === 'cardvalue');
   const sunriseApp = APPS.find(app => app.id === 'sunrise');
 
@@ -47,7 +47,7 @@ const FeaturedApp: React.FC = () => {
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
                 {anniversaryApp.description}
                 <span className="block mt-4 text-base text-gray-400">
-                  The definitive app for couples. Join over 450,000 users who trust us with their most special memories.
+                  The definitive app for couples. Trusted by 250k+ users to celebrate the moments that matter.
                 </span>
               </p>
               
@@ -61,13 +61,13 @@ const FeaturedApp: React.FC = () => {
                 <div className="w-px bg-gray-700" />
                 <div>
                     <div className="text-white text-2xl font-bold">
-                        450k+
+                        250k+
                     </div>
                     <span className="text-sm text-gray-500">Downloads</span>
                 </div>
               </div>
 
-              <a href="#" className="inline-flex items-center bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-50 transition-all group">
+              <a href={anniversaryApp.url || '#'} target="_blank" rel="noreferrer" className="inline-flex items-center bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-50 transition-all group">
                 View on App Store
                 <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
@@ -92,9 +92,9 @@ const FeaturedApp: React.FC = () => {
                <div className="mt-auto">
                   <h3 className="text-xl font-bold mb-2 text-white">{linkSaverApp.name}</h3>
                   <p className="text-gray-400 text-sm mb-4">{linkSaverApp.description}</p>
-                  <span className="text-blue-400 text-sm font-medium group-hover:text-blue-300 flex items-center justify-center">
+                  <a href={linkSaverApp.url || '#'} target="_blank" rel="noreferrer" className="text-blue-400 text-sm font-medium group-hover:text-blue-300 flex items-center justify-center">
                     Learn more <ChevronRight className="w-4 h-4 ml-1" />
-                  </span>
+                  </a>
                </div>
             </div>
           )}
@@ -108,9 +108,9 @@ const FeaturedApp: React.FC = () => {
                <div className="mt-auto">
                   <h3 className="text-xl font-bold mb-2 text-white">{cardValueApp.name}</h3>
                   <p className="text-gray-400 text-sm mb-4">{cardValueApp.description}</p>
-                  <span className="text-blue-400 text-sm font-medium group-hover:text-blue-300 flex items-center justify-center">
+                  <a href={cardValueApp.url || '#'} target="_blank" rel="noreferrer" className="text-blue-400 text-sm font-medium group-hover:text-blue-300 flex items-center justify-center">
                     Learn more <ChevronRight className="w-4 h-4 ml-1" />
-                  </span>
+                  </a>
                </div>
             </div>
           )}
@@ -124,9 +124,9 @@ const FeaturedApp: React.FC = () => {
                <div className="mt-auto">
                   <h3 className="text-xl font-bold mb-2 text-white">{sunriseApp.name}</h3>
                   <p className="text-gray-400 text-sm mb-4">{sunriseApp.description}</p>
-                  <span className="text-blue-400 text-sm font-medium group-hover:text-blue-300 flex items-center justify-center">
+                  <a href={sunriseApp.url || '#'} target="_blank" rel="noreferrer" className="text-blue-400 text-sm font-medium group-hover:text-blue-300 flex items-center justify-center">
                     Learn more <ChevronRight className="w-4 h-4 ml-1" />
-                  </span>
+                  </a>
                </div>
             </div>
           )}

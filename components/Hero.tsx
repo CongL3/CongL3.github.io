@@ -20,8 +20,11 @@ const Hero: React.FC = () => {
         <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 dark:text-white tracking-tight mb-4">
           {HERO_CONTENT.name}
         </h1>
-        <p className="text-xl md:text-2xl text-blue-600 dark:text-blue-400 font-medium mb-6">
+        <p className="text-xl md:text-2xl text-blue-600 dark:text-blue-400 font-medium mb-3">
           {HERO_CONTENT.title}
+        </p>
+        <p className="text-base md:text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto mb-6">
+          {HERO_CONTENT.subtitle}
         </p>
         <p className="mt-2 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed mb-8">
           {HERO_CONTENT.blurb}
@@ -49,14 +52,16 @@ const Hero: React.FC = () => {
             href="#featured"
             className="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-white bg-gray-900 dark:bg-white dark:text-black rounded-full hover:bg-black dark:hover:bg-gray-200 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
           >
-            View My Apps
+            View Flagship App
             <ArrowRight className="ml-2 h-5 w-5" />
           </a>
           <a
-            href="#career"
+            href={HERO_CONTENT.appStoreLink}
+            target="_blank"
+            rel="noreferrer"
             className="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-full hover:bg-gray-50 dark:hover:bg-gray-700 transition-all hover:border-gray-300 dark:hover:border-gray-600"
           >
-            Professional CV
+            Browse App Store Portfolio
           </a>
         </div>
 

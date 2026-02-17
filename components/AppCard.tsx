@@ -26,7 +26,7 @@ const AppCard: React.FC<{ app: AppData }> = ({ app }) => (
         <div className="flex items-center text-xs font-medium text-gray-400 dark:text-gray-500">
             {app.downloads && <span>{app.downloads} Downloads</span>}
         </div>
-        <a href="#" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 p-2 rounded-full hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors">
+        <a href={app.url || '#'} target="_blank" rel="noreferrer" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 p-2 rounded-full hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors">
             <ExternalLink className="w-4 h-4" />
         </a>
     </div>
